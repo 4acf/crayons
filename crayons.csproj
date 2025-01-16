@@ -1,0 +1,58 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+    <ApplicationIcon>res\crayons.ico</ApplicationIcon>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="res\color_000000.png" />
+    <None Remove="res\color_296be4.png" />
+    <None Remove="res\color_7ecf61.png" />
+    <None Remove="res\color_b14ddf.png" />
+    <None Remove="res\color_f03535.png" />
+    <None Remove="res\color_fabd2f.png" />
+    <None Remove="res\color_fdfdfd.png" />
+    <None Remove="res\crayons.png" />
+    <None Remove="res\eraser.png" />
+    <None Remove="res\eraser_hover.png" />
+    <None Remove="res\pencil.png" />
+    <None Remove="res\pencil_hover.png" />
+    <None Remove="res\trash.png" />
+    <None Remove="res\trash_hover.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="res\crayons.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="res\color_000000.png" />
+    <Resource Include="res\color_296be4.png" />
+    <Resource Include="res\color_7ecf61.png" />
+    <Resource Include="res\color_b14ddf.png" />
+    <Resource Include="res\color_f03535.png" />
+    <Resource Include="res\color_fabd2f.png" />
+    <Resource Include="res\color_fdfdfd.png" />
+    <Resource Include="res\eraser_hover.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Hardcodet.NotifyIcon.Wpf" Version="2.0.1" />
+    <PackageReference Include="NonInvasiveKeyboardHookLibrary.Core" Version="2.1.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="res\crayons.png" />
+    <Resource Include="res\eraser.png" />
+    <Resource Include="res\pencil.png" />
+    <Resource Include="res\pencil_hover.png" />
+    <Resource Include="res\trash.png" />
+    <Resource Include="res\trash_hover.png" />
+  </ItemGroup>
+
+</Project>
