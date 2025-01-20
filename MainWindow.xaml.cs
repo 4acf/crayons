@@ -31,7 +31,6 @@ namespace crayons
         }
 
         private List<Line> _lines = new();
-        private bool[,] _filled;
         private List<ColorPreset> _colorPresets;
         private Dictionary<string, ImageSource> _hoverImages;
         private Dictionary<string, ImageSource> _clickImages;
@@ -75,8 +74,6 @@ namespace crayons
             var bounds = System.Windows.Forms.Screen.PrimaryScreen.Bounds;
             canvas.Width = bounds.Width;
             canvas.Height = bounds.Height;
-
-            _filled = new bool[bounds.Height, bounds.Width];
 
         }
 
